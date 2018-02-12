@@ -1,1 +1,1 @@
-# Responsive-grid-template-master
+# responsive-grid-template
