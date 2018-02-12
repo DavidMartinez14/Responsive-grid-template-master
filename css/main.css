@@ -1,0 +1,259 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-color: #99ffff;
+}
+
+div.container {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  border: 3px solid #990000; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Logo"
+    "Name"
+    "Link-bar";
+}
+
+main {
+  border: 3px solid #009900; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Story"
+    "Map"
+    "Delivery-S"
+    "Testimonies"
+    "News-and-updates";
+}
+
+footer {
+  border: 3px solid #000099; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Social-M"
+    "Contacts";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Logo Name"
+      "Link-bar Link-bar";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Story Story"
+      "Map Map"
+      "Delivery-S Delivery-S"
+      "Testimonies Testimonies"
+      "News-and-updates News-and-updates"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Social-M Contacts";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Logo Name"
+      "Link-bar Link-bar";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Story Story Delivery-S"
+      "Map Map Map"
+      "Testimonies Testimonies News-and-updates"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Social-M Contacts";
+  }
+}
+
+div {
+  border: 1px solid #999999; /* disable this line once layout works */
+  text-align: center; /* disable this line once layout works */
+}
+
+main div {
+    min-height: 80px; /* disable this line once layout works */
+}
+
+div#Logo {
+  grid-area: Logo;
+}
+
+div#Name {
+  grid-area: Name;
+}
+
+div#Link-bar {
+  grid-area: Link-bar;
+}
+
+div#Story {
+  grid-area: Story;
+}
+
+div#Delivery-S {
+  grid-area: Delivery-S;
+}
+
+div#Social-M {
+  grid-area: Social-M;
+}
+
+div#Contacts {
+  grid-area: Contacts;
+}
+div#Testimonies {
+  grid-area: Testimonies;
+}
+div#News-and-updates {
+  grid-area: News-and-updates
+}
+div#Map {
+  grid-area: Map
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+/* images */
+img {
+
+}
+
+/* links */
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/
